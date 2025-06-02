@@ -55,7 +55,7 @@ void verificarGastos();
             case 0:
             return 0;
         }
-         
+     printf("\n");    
      printf("Enter para continuar ...\n");
          getchar();
          getchar();
@@ -144,23 +144,23 @@ void servico(){
     int id;
     printf("Informe o ID da reserva para o servico : ");
     scanf("%d", &id);
-    printf ("Você solicitou o serviço de quarto! Informe o que você quer\n:");
+    printf ("Você solicitou o serviço de quarto! Informe o que você quer:\n");
     printf("1 - Traveseiro adicional\n");
     printf("2 - Cobertor adicional\n");
     printf("3 - Faxina no quato\n");
     printf("4 - Trocar o lençol\n");
     scanf("%d", &checkinn[id-1].squarto);
-    printf("Você pediu %d\n chegará em um intervalo de 20 - 40 minutos", checkinn[contCad].squarto);
+    printf("Seu pedido chegará em um intervalo de 20 - 40 minutos");
  }
  
  void pedido(){
      
     printf("Voce solicitou fazer pedido! Informe qual pedido você quer fazer:\n");
-    printf (" Almoço no proprio quarto\n");
-    printf(" Jantar no proprio quarto\n");
-    printf(" Solicitar café da manhã\n");
+    printf ("1 - Almoço no proprio quarto\n");
+    printf("2 -  Jantar no proprio quarto\n");
+    printf("3 - Solicitar café da manhã\n");
     scanf("%d", &checkinn[contCad].fpedido);
-    printf("Seu pedido foi %d\nchegará em um intervalo de 30 - 50 minutos", checkinn[contCad].fpedido);
+    printf("Seu pedido chegará em um intervalo de 30 - 50 minutos");
  }
     
 
